@@ -9,10 +9,29 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Prayer_beads_icon.png" type="image/x-icon">
+    <style>
+        /* ...existing code... */
+        .box form input[type="submit"] {
+            border: none;
+            outline: none;
+            padding: 9px 25px;
+            background: linear-gradient(135deg, #2196f3, #4dabf5);
+            cursor: pointer;
+            font-size: 0.9em;
+            color: #fff;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .box form input[type="submit"]:hover {
+            background: linear-gradient(135deg, #1976d2, #2196f3);
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Namaz Tracker</h1>
+        <h1>NAMAZON KA JAEZA</h1>
         <nav id="main-nav">
             <button id="nav-dashboard" class="nav-button" style="display: none;">Dashboard</button>
             <button id="nav-history" class="nav-button" style="display: none;">History</button>
@@ -22,11 +41,11 @@
 
     <main>
         <section id="login-section" class="auth-section">
-            <h2>Login</h2>
+            <h2 style="color: #4dabf5;">Login</h2>
             <input type="email" id="login-email" placeholder="Email">
             <input type="password" id="login-password" placeholder="Password">
-            <button id="login-btn" class="btn-pulse">Login</button>
-            <p>Don't have an account? <a href="register.html" id="show-register">Register here</a></p>
+            <button id="login-btn" class="btn-pulse" style="background-color: #4dabf5;">Login</button>
+            <p>Don't have an account? <a href="register.html" id="show-register" style="color: #4dabf5;">Register here</a></p>
             <div id="login-error" class="error-message"></div>
         </section>
     </main>

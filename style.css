@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #000000 0%, #004d00 100%);
+    background: #23242a;
     color: #e0ffe0;
     display: flex;
     flex-direction: column;
@@ -17,8 +17,8 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(to right, #000000, #004d00);
-    color: #e0ffe0;
+    background: linear-gradient(to right, #1c1c1c, #45f3ff);
+    color: #fff;
     padding: 1.2rem 2.5rem;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -39,8 +39,8 @@ header h1 {
 
 /* Navigation buttons */
 .nav-button {
-    background: linear-gradient(135deg, #004d00, #008000);
-    color: #e0ffe0;
+    background: linear-gradient(135deg, #1c1c1c, #45f3ff);
+    color: #fff;
     border: none;
     padding: 0.7rem 1.4rem;
     margin-left: 12px;
@@ -54,7 +54,7 @@ header h1 {
 }
 
 .nav-button:hover {
-    background: linear-gradient(135deg, #006600, #00b300);
+    background: linear-gradient(135deg, #23242a, #45f3ff);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -65,7 +65,7 @@ main {
     padding: 2.5rem;
     max-width: 800px;
     margin: 30px auto;
-    background: linear-gradient(135deg, #ffffff, #e0ffe0);
+    background: linear-gradient(135deg, #1c1c1c, #23242a);
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(10px);
@@ -83,7 +83,7 @@ section {
     padding: 2rem;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(135deg, #ffffff, #e0ffe0);
+    background: linear-gradient(135deg, #1c1c1c, #23242a);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
@@ -257,7 +257,7 @@ h2::after {
     padding: 15px 20px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(135deg, #ffffff, #e0ffe0);
+    background: linear-gradient(135deg, #1c1c1c, #23242a);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     gap: 15px;
     transition: all 0.3s ease;
@@ -316,7 +316,7 @@ h2::after {
 
 /* Done state - completed (green with checkmark) */
 .toggle-prayer-btn.done {
-    background: linear-gradient(135deg, #004d00, #008000);
+    background: linear-gradient(135deg, #004d00, #45f3ff);
     color: white;
     box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 }
@@ -357,7 +357,7 @@ h2::after {
 }
 
 #history-days:focus {
-    border-color: #66bb6a;
+    border-color:#ff6b8a;
     box-shadow: 0 0 0 3px rgba(102, 187, 106, 0.2);
     outline: none;
 }
@@ -383,7 +383,7 @@ h2::after {
 
 /* History day card */
 .history-day-card {
-    background-color: #fff;
+    background-color: #000000;
     border: none;
     border-radius: 12px;
     padding: 20px;
@@ -398,7 +398,7 @@ h2::after {
 }
 
 .history-day-card h3 {
-    color: #43a047;
+    color: #4dabf5;
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.4rem;
@@ -422,8 +422,8 @@ h2::after {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, #000000, #004d00);
-    color: #e0ffe0;
+    background: linear-gradient(to right, #1c1c1c, #45f3ff);
+    color: #fff;
     text-align: center;
     padding: 1.2rem 0;
     margin-top: auto;

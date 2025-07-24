@@ -5,14 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Namaz Tracking System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Prayer_beads_icon.png" type="image/x-icon">
+    <style>
+        /* ...existing code... */
+        .box form input[type="submit"] {
+            border: none;
+            outline: none;
+            padding: 9px 25px;
+            background: linear-gradient(135deg, #ff2770, #ff6b8a);
+            cursor: pointer;
+            font-size: 0.9em;
+            color: #fff;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .box form input[type="submit"]:hover {
+            background: linear-gradient(135deg, #d32f2f, #ff6b8a);
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Namaz Tracker</h1>
+        <h1>APNI SHANAKT KARAEIN</h1>
         <nav id="main-nav">
             <button id="nav-dashboard" class="nav-button" style="display: none;">Dashboard</button>
             <button id="nav-history" class="nav-button" style="display: none;">History</button>
