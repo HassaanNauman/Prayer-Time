@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - Namaz Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Prayer_beads_icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Namaz Tracker</h1>
+        <nav id="main-nav">
+            <button id="nav-dashboard" class="nav-button">Dashboard</button>
+            <button id="nav-history" class="nav-button">History</button>
+            <button id="nav-logout" class="nav-button">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="history-section">
+            <h2>Namaz History</h2>
+            <div class="history-controls">
+                <label for="history-days">Show last:</label>
+                <select id="history-days">
+                    <option value="7">7 Days</option>
+                    <option value="30">30 Days</option>
+                </select>
+                <button id="load-history-btn" class="btn-glow">Load History</button>
+            </div>
+            <div id="history-list">
+                <!-- History items will be dynamically added here -->
+            </div>
+            <div id="history-message" class="info-message"></div>
+        </section>
+    </main>
+
+    <!-- Load Firebase first -->
+    <script src="firebase.js"></script>
+    
+    <!-- Load modules -->
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="history.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

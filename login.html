@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Namaz Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Prayer_beads_icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Namaz Tracker</h1>
+        <nav id="main-nav">
+            <button id="nav-dashboard" class="nav-button" style="display: none;">Dashboard</button>
+            <button id="nav-history" class="nav-button" style="display: none;">History</button>
+            <button id="nav-logout" class="nav-button" style="display: none;">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section" class="auth-section">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn" class="btn-pulse">Login</button>
+            <p>Don't have an account? <a href="register.html" id="show-register">Register here</a></p>
+            <div id="login-error" class="error-message"></div>
+        </section>
+    </main>
+
+    <!-- Load Firebase first -->
+    <script src="firebase.js"></script>
+    
+    <!-- Load modules -->
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

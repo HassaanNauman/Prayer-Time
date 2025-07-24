@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Namaz Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/Prayer_beads_icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Namaz Tracker</h1>
+        <nav id="main-nav">
+            <button id="nav-dashboard" class="nav-button">Dashboard</button>
+            <button id="nav-history" class="nav-button">History</button>
+            <button id="nav-logout" class="nav-button">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard-section">
+            <h2>Today's Prayers - <span id="dashboard-date"></span></h2>
+            <div id="dashboard-user-info">Logged in as: <span id="user-email-display"></span></div>
+            <div id="dashboard-prayer-list-simple">
+              <p id="dashboard-prayer-date"></p>
+              <p id="dashboard-city"></p>
+            </div>
+            <div class="prayer-list">
+                <div class="prayer-item">
+                    <span>Fajr</span>
+                    <span class="prayer-time" id="prayer-time-fajr">4:31 am</span>
+                    <button class="toggle-prayer-btn float-animation" data-prayer="fajr">❌</button>
+                </div>
+                <div class="prayer-item">
+                    <span>Dhuhr</span>
+                    <span class="prayer-time" id="prayer-time-dhuhr">12:39 pm</span>
+                    <button class="toggle-prayer-btn float-animation" data-prayer="dhuhr">❌</button>
+                </div>
+                <div class="prayer-item">
+                    <span>Asr</span>
+                    <span class="prayer-time" id="prayer-time-asr">5:19 pm</span>
+                    <button class="toggle-prayer-btn float-animation" data-prayer="asr">❌</button>
+                </div>
+                <div class="prayer-item">
+                    <span>Maghrib</span>
+                    <span class="prayer-time" id="prayer-time-maghrib">7:21 pm</span>
+                    <button class="toggle-prayer-btn float-animation" data-prayer="maghrib">❌</button>
+                </div>
+                <div class="prayer-item">
+                    <span>Isha</span>
+                    <span class="prayer-time" id="prayer-time-isha">8:46 pm</span>
+                    <button class="toggle-prayer-btn float-animation" data-prayer="isha">❌</button>
+                </div>
+            </div>
+            <div id="dashboard-message" class="info-message"></div>
+        </section>
+    </main>
+
+    <!-- Load Firebase first -->
+    <script src="firebase.js"></script>
+    
+    <!-- Load modules -->
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="auth.js"></script>
+    <script type="module" src="dashboard.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
